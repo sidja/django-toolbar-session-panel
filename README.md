@@ -1,6 +1,7 @@
 # Session Debug Panel
 
-This panel will allow you to query your session after request 
+This panel will allow you to query your session after request. 
+
 Serialied session object data will also be displayed
 
 For ex : 

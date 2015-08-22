@@ -13,6 +13,7 @@ ex_class.py
         cart_item_count=""
 
 view.py
+    
     from ex_class import A
     
     def index(request):

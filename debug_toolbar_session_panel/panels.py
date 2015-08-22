@@ -24,7 +24,7 @@ class SessionDebugPanel(DebugPanel):
         data = {'session':{
             'info': SortedDict([
                 ('session_key',request.session.session_key),
-                ('user', request._cached_user),
+                ('user', request.user),
                 ('modified', request.session.modified),
                 ('accessed', request.session.accessed)
                 ]),

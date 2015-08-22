@@ -31,4 +31,4 @@ and in settings.py:
 ]
 than you will see something like:
 
-<img src="http://chronosbox.org/screenshots/session_demo.png" />
+<img src="https://dl.dropboxusercontent.com/u/4318926/Github/Screenshots/Django_debug_toolbar/Session_screen.PNG" />

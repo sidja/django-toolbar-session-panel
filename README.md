@@ -1,8 +1,8 @@
-# Session Debug Panel
+# Session Debug Panel for serialised objects
 
 This panel will allow you to query your session after request. 
 
-Serialied session object data will also be displayed
+Serialied / Serialized / Pickled session object data will also be displayed.
 
 For ex : 
 

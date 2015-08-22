@@ -30,6 +30,6 @@ class SessionDebugPanel(DebugPanel):
                 ('modified', request.session.modified),
                 ('accessed', request.session.accessed)
                 ]),
-            'data' : SortedDict([(i[0], json.dumps(i[1].__dict__)) if isinstance(i[1], types.InstanceType) else (i[0], i[1]) for i in request.session.items()] )
+            'data' : SortedDict([(i[0], json.dumps(i[1], default=lambda o: o.__dict__)) if isinstance(i[1], types.InstanceType) else (i[0], i[1]) for i in request.session.items()] )
         }}
         self.record_stats(data)

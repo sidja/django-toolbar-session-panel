@@ -1,6 +1,26 @@
 # Session Debug Panel
 
-This panel allow you to query your session after request.
+This panel will allow you to query your session after request 
+Serialied session object data will also be displayed
+
+For ex : 
+
+ex_class.py
+
+    class A():
+        cart_amount=""
+        cart_item_count=""
+
+view.py
+    from ex_class import A
+    
+    def index(request):
+        obj = A()
+        obj.cart_amount = 100
+        obj.cart_amount = 4
+        request.session['cart'] = obj
+	    request.session['test_panel'] = "is this showing up normally"
+
 
 ## Install
 
@@ -29,6 +49,10 @@ and in settings.py:
     'debug_toolbar.panels.redirects.RedirectsPanel',
     'debug_toolbar_session_panel.panels.SessionDebugPanel',
 ]
+
+# Required for serialising session objects
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+
 than you will see something like:
 
 <img src="https://dl.dropboxusercontent.com/u/4318926/Github/Screenshots/Django_debug_toolbar/Session_screen.PNG" />

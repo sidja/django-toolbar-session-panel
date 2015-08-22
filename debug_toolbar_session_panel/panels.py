@@ -2,6 +2,8 @@
 from debug_toolbar.panels import DebugPanel 
 from django.utils.translation import ugettext_lazy as _
 from django.utils.datastructures import SortedDict
+import json
+import types
 
 class SessionDebugPanel(DebugPanel):
     """

@@ -1,4 +1,4 @@
-# Session Debug Panel for serialised objects
+# Session Debug Panel for Serialised Objects
 
 This panel will allow you to query your session after request. 
 

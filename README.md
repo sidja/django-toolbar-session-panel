@@ -52,8 +52,8 @@ and in settings.py:
 	    'debug_toolbar_session_panel.panels.SessionDebugPanel',
 	]
 
-# Required for serialising session objects
-SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+
+	SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 
 than you will see something like:
 

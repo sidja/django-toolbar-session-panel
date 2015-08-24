@@ -19,7 +19,7 @@ view.py
     def index(request):
         obj = A()
         obj.cart_amount = 100
-        obj.cart_amount = 4
+        obj.cart_item_count = 4
         request.session['cart'] = obj
 	    request.session['test_panel'] = "is this showing up normally"
 
